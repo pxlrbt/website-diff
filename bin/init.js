@@ -13,7 +13,7 @@ module.exports = () => {
         `,
     );
 
-    let configFile = 'config.yml';
+    let configFile = 'website-diff.yml';
     let configTemplate = `${__dirname}/../lib/config-defaults.yml`;
 
     fs.copyFileSync(
