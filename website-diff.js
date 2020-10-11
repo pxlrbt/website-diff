@@ -48,6 +48,9 @@ async function main() {
         process.exit(0);
     }
 
+    let start = +new Date();
+    console.log('Started at:', new Date().toLocaleTimeString())
+
     switch (cli.input[0]) {
         case 'crawl':
             require('./bin/crawl')();
@@ -80,6 +83,8 @@ async function main() {
             break;
     }
 
+    console.log('Finished at:', new Date().toLocaleTimeString())
+    console.log('Total time:', new Date(+new Date() - start).toISOString().substr(11, 8))
 }
 
 main();
