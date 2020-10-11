@@ -2,10 +2,7 @@
 
 'use strict';
 
-const fs = require('fs');
 const meow = require('meow');
-const YAML = require('yaml')
-const chalk = require('chalk');
 
 async function main() {
     const cli = meow(
@@ -14,6 +11,7 @@ async function main() {
             $ website-diff COMMAND [OPTIONS]
 
         Commands:
+            init        Create config file
             crawl       Crawl a site
             generate    Generate backstop config
             reference   Create backstop reference data
@@ -45,16 +43,6 @@ async function main() {
         }
     );
 
-    let config = {};
-
-    try {
-        config = YAML.parse(fs.readFileSync(cli.flags.config, 'utf8'));
-    } catch (e) {
-        console.warn(chalk.yellow(`> Warning: Cannot read config "${cli.flags.config}"`));
-    }
-
-    config = Object.assign(config, cli.flags);
-
     if (cli.input.length == 0) {
         cli.showHelp();
         process.exit(0);
@@ -81,6 +69,10 @@ async function main() {
             await require('./bin/generate-config')();
             await require('./bin/reference')();
             await require('./bin/test')();
+            break;
+
+        case 'init':
+            await require('./bin/init')();
             break;
 
         default:

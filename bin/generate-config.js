@@ -2,10 +2,9 @@
 
 'use strict';
 
-const fs = require('fs');
 const meow = require('meow');
 const validurl = require('valid-url').is_web_uri;
-const YAML = require('yaml')
+const loadConfig = require('../lib/config');
 const chalk = require('chalk');
 const generate_config = require('../lib/generate-config');
 
@@ -39,15 +38,7 @@ module.exports = async () => {
         }
     );
 
-    let config = {};
-
-    try {
-        config = YAML.parse(fs.readFileSync(cli.flags.config, 'utf8'));
-    } catch (e) {
-        console.warn(chalk.yellow(`> Warning: Cannot read config "${cli.flags.config}"`));
-    }
-
-    config = Object.assign(config, cli.flags);
+    let config = loadConfig(cli.flags);
 
     if (! validurl(config.url)) {
         console.error(chalk.red(`> Error: "${config.url}" isn't a valid URL`));

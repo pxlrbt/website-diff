@@ -12,7 +12,7 @@ module.exports = async () => {
     const cli = meow(
         `
         Usage
-            $ website-diff reference
+            $ website-diff test
         `,
         {
             flags: {
@@ -27,11 +27,11 @@ module.exports = async () => {
     const config = loadConfig(cli.flags);
 
     const start = +new Date();
-    const spinner = ora('Generating reference bitmaps ...').start();
+    const spinner = ora('Generating test and diff bitmaps ...').start();
 
     config.verbose || disableLogging();
-    await backstop('reference', {config: config.paths.backstop_config});
+    await backstop('test', {config: config.paths.backstop_config});
     config.verbose || enableLogging();
 
-    spinner.succeed(`Generated reference bitmaps in ${(new Date() - start) / 1000}s`);
+    spinner.succeed(`Generated test bitmaps in ${(new Date() - start) / 1000}s`);
 }

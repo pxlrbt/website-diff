@@ -13,8 +13,13 @@ npm install -g ./
 
 ## Usage
 
+### Initialize
+Publish the config file.
+```bash
+website-diff init
+```
 ### Crawl a site
-Crawls a site based on the config in `config.yml` and stores the results in `sites.yml` so it can be modified before generating a config.
+Crawls a site based on the config in `website-diff.yml` and stores the results in `sites.yml` so it can be modified before generating a config.
 ```bash
 website-diff crawl
 ```

@@ -1,0 +1,7 @@
+url: https://
+referenceUrl: https://
+limitSimilar: 10
+paths:
+    backstop_template: backstop.yml
+    backstop_config: backstop/backstop.json
+    sites: backstop/sites.yml
