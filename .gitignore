@@ -1,0 +1,4 @@
+backstop/
+node_modules/
+sites.yml
+/test.js

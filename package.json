@@ -1,0 +1,40 @@
+{
+  "name": "website-diff",
+  "version": "0.1.0",
+  "main": "index.js",
+  "bin": {
+    "website-diff": "./website-diff.js"
+  },
+  "keywords": [
+    "backstopjs",
+    "backstop",
+    "crawl",
+    "crawler",
+    "config",
+    "generator",
+    "regression",
+    "test"
+  ],
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "backstopjs": "^5.0.6",
+    "chalk": "1.1.3",
+    "cheerio": "^1.0.0-rc.2",
+    "cli-truncate": "1.0.0",
+    "jsonfile": "^3.0.0",
+    "meow": "^7.0",
+    "object.entries": "1.0.4",
+    "ora": "^5.0",
+    "simplecrawler": "^1.1",
+    "url-parse": "^1.1.9",
+    "valid-url": "1.0.9",
+    "yaml": "^1.10.0"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}

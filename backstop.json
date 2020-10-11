@@ -1,0 +1,317 @@
+{
+    "viewports": [
+        {
+            "name": "iPhone",
+            "width": 375,
+            "height": 667
+        },
+        {
+            "name": "iPad",
+            "width": 768,
+            "height": 1024
+        },
+        {
+            "name": "Desktop",
+            "width": 1440,
+            "height": 900
+        }
+    ],
+    "paths": {
+        "bitmaps_reference": "backstop_data/bitmaps_reference",
+        "bitmaps_test": "backstop_data/bitmaps_test",
+        "casper_scripts": "backstop_data/casper_scripts",
+        "html_report": "backstop_data/html_report",
+        "ci_report": "backstop_data/ci_report"
+    },
+    "engine": "puppeteer",
+    "engineOptions": {
+        "args": [
+            "--no-sandbox"
+        ]
+    },
+    "report": [
+        "browser"
+    ],
+    "debug": false,
+    "scenarios": [
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/",
+            "referenceUrl": "https://www.keideltherme.de/staging/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/"
+        },
+        {
+            "delay": 1,
+            "url": "https://www.keideltherme.de/die-keidel-therme/",
+            "referenceUrl": "https://www.keideltherme.de/staging/die-keidel-therme/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/die-keidel-therme"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/die-keidel-therme/wiedereroeffnung-keidel/",
+            "referenceUrl": "https://www.keideltherme.de/staging/die-keidel-therme/wiedereroeffnung-keidel/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/die-keidel-therme/wiedereroeffnung-keidel"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/die-keidel-therme/therme/",
+            "referenceUrl": "https://www.keideltherme.de/staging/die-keidel-therme/therme/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/die-keidel-therme/therme"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/die-keidel-therme/sauna/",
+            "referenceUrl": "https://www.keideltherme.de/staging/die-keidel-therme/sauna/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/die-keidel-therme/sauna"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/die-keidel-therme/fitness/",
+            "referenceUrl": "https://www.keideltherme.de/staging/die-keidel-therme/fitness/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/die-keidel-therme/fitness"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/die-keidel-therme/wellness-gesundheit/",
+            "referenceUrl": "https://www.keideltherme.de/staging/die-keidel-therme/wellness-gesundheit/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/die-keidel-therme/wellness-gesundheit"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/die-keidel-therme/funktionstraining-im-wasser-rheuma-liga/",
+            "referenceUrl": "https://www.keideltherme.de/staging/die-keidel-therme/funktionstraining-im-wasser-rheuma-liga/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/die-keidel-therme/funktionstraining-im-wasser-rheuma-liga"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/uber-uns/",
+            "referenceUrl": "https://www.keideltherme.de/staging/uber-uns/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/uber-uns"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/informationen/",
+            "referenceUrl": "https://www.keideltherme.de/staging/informationen/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/informationen"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/angebote/aqua-fitness-boxing/",
+            "referenceUrl": "https://www.keideltherme.de/staging/angebote/aqua-fitness-boxing/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/angebote/aqua-fitness-boxing"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/angebote/aqua-zumba/",
+            "referenceUrl": "https://www.keideltherme.de/staging/angebote/aqua-zumba/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/angebote/aqua-zumba"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/angebote/aquafit-board/",
+            "referenceUrl": "https://www.keideltherme.de/staging/angebote/aquafit-board/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/angebote/aquafit-board"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/angebote/early-bird-aqua-cycling-kurs/",
+            "referenceUrl": "https://www.keideltherme.de/staging/angebote/early-bird-aqua-cycling-kurs/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/angebote/early-bird-aqua-cycling-kurs"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/angebote/ernaehrung-und-rheuma/",
+            "referenceUrl": "https://www.keideltherme.de/staging/angebote/ernaehrung-und-rheuma/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/angebote/ernaehrung-und-rheuma"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/angebote/ernaehrung-und-rheuma-2/",
+            "referenceUrl": "https://www.keideltherme.de/staging/angebote/ernaehrung-und-rheuma-2/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/angebote/ernaehrung-und-rheuma-2"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/datenschutz/",
+            "referenceUrl": "https://www.keideltherme.de/staging/datenschutz/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/datenschutz"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/impressum/",
+            "referenceUrl": "https://www.keideltherme.de/staging/impressum/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/impressum"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/presse/",
+            "referenceUrl": "https://www.keideltherme.de/staging/presse/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/presse"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/downloads/",
+            "referenceUrl": "https://www.keideltherme.de/staging/downloads/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/downloads"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/angebote/informationen-fuer-ihren-besuch-in-der-keidel-therme/",
+            "referenceUrl": "https://www.keideltherme.de/staging/angebote/informationen-fuer-ihren-besuch-in-der-keidel-therme/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/angebote/informationen-fuer-ihren-besuch-in-der-keidel-therme"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/angebote/informationen-zu-mehrfachkarten-und-eintritts-gutscheinen-der-keidel-therme/",
+            "referenceUrl": "https://www.keideltherme.de/staging/angebote/informationen-zu-mehrfachkarten-und-eintritts-gutscheinen-der-keidel-therme/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/angebote/informationen-zu-mehrfachkarten-und-eintritts-gutscheinen-der-keidel-therme"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/angebote/yoga-und-freediving/",
+            "referenceUrl": "https://www.keideltherme.de/staging/angebote/yoga-und-freediving/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/angebote/yoga-und-freediving"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/angebote/aqua-fitness/",
+            "referenceUrl": "https://www.keideltherme.de/staging/angebote/aqua-fitness/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/angebote/aqua-fitness"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/angebote/aqua-cycling/",
+            "referenceUrl": "https://www.keideltherme.de/staging/angebote/aqua-cycling/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/angebote/aqua-cycling"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/angebote/aqua-relax/",
+            "referenceUrl": "https://www.keideltherme.de/staging/angebote/aqua-relax/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/angebote/aqua-relax"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/angebote/relaqua/",
+            "referenceUrl": "https://www.keideltherme.de/staging/angebote/relaqua/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/angebote/relaqua"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/berichte-tipps/7-gute-grunde/",
+            "referenceUrl": "https://www.keideltherme.de/staging/berichte-tipps/7-gute-grunde/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/berichte-tipps/7-gute-grunde"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/berichte-tipps/saunieren-fuer-anfaenger/",
+            "referenceUrl": "https://www.keideltherme.de/staging/berichte-tipps/saunieren-fuer-anfaenger/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/berichte-tipps/saunieren-fuer-anfaenger"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/berichte-tipps/sauna-knigge/",
+            "referenceUrl": "https://www.keideltherme.de/staging/berichte-tipps/sauna-knigge/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/berichte-tipps/sauna-knigge"
+        },
+        {
+            "delay": 0,
+            "url": "https://www.keideltherme.de/berichte-tipps/hot-stone-massage/",
+            "referenceUrl": "https://www.keideltherme.de/staging/berichte-tipps/hot-stone-massage/",
+            "hideSelectors": [],
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true,
+            "label": "/berichte-tipps/hot-stone-massage"
+        }
+    ]
+}
