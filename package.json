@@ -15,11 +15,7 @@
     "regression",
     "test"
   ],
-  "files": [
-    "lib",
-    "index.js"
-  ],
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "backstopjs": "^5.0.6",
     "chalk": "1.1.3",
