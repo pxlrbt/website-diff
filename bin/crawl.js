@@ -39,10 +39,10 @@ module.exports = () => {
 
     let config = loadConfig(cli.flags);
 
-    if (! validurl(config.url)) {
-        console.error(chalk.red(`> Error: "${config.url}" isn't a valid URL`));
+    if (! validurl(config.referenceUrl)) {
+        console.error(chalk.red(`> Error: "${config.referenceUrl}" isn't a valid URL`));
         process.exit(1);
     }
 
-    crawl(config.url, config);
+    crawl(config.referenceUrl, config);
 }
