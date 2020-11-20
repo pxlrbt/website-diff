@@ -8,6 +8,7 @@ Clone the repo and install it globally so the `website-diff` command is register
 ```bash
 git clone https://github.com/pxlrbt/website-diff.git
 cd website-diff
+npm install
 npm install -g ./
 ```
 
