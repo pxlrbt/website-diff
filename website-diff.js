@@ -29,7 +29,6 @@ async function main() {
                 config: {
                     type: 'string',
                     alias: 'c',
-                    default: './config.yml'
                 },
 
                 url: {

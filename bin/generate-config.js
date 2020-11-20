@@ -24,7 +24,6 @@ module.exports = async () => {
                 config: {
                     type: 'string',
                     alias: 'c',
-                    default: './config.yml'
                 },
 
                 url: {
