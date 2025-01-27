@@ -1,0 +1,24 @@
+engine: puppeteer
+engineOptions:
+    slowMo: 250
+    ignoreHTTPSErrors: true
+    executablePath: '/Applications/Chromium.app/Contents/MacOS/Chromium'
+    args:
+    - --no-sandbox
+    # - --disable-setuid-sandbox
+    # - --disable-gpu
+    - --enable-font-antialiasing
+    - --font-render-hinting=none
+    - --force-device-scale-factor=1
+    - --disable-infobars=true
+    - --hide-scrollbars
+
+report: browser
+
+onReadyScript: 'ready.js'
+
+resembleOutputOptions:
+    ignoreLess: true
+    ignoreAntialiasing: true
+
+asyncCaptureLimit: 5
